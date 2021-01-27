@@ -1,0 +1,23 @@
+.tabs{
+
+}
+.tabs .tabs_title{
+  display: flex;
+  /* flex-; */
+  padding:15rpx 0;
+}
+.tabs .tabs_title .tab_title{
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.tab_title.tab_active{
+    color: var(--themeColor);
+    border-bottom:5rpx solid currentColor;
+}
+
+/* tab切换数据 */
+.tabs .goods_content{
+
+}

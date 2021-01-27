@@ -1,0 +1,56 @@
+{
+  "pages":[
+    "pages/home/home",
+    "pages/img/img",
+    "pages/search/search",
+    "pages/my/my",
+    "pages/sousuo/sousuo",
+    "pages/goods_list/goods_list",
+    "pages/goods_details/goods_details"
+
+  ],
+  "window":{
+    "backgroundTextStyle":"dark",
+    "navigationBarBackgroundColor": "#E42810",
+    "navigationBarTitleText": "小商城",
+    "navigationBarTextStyle":"black",
+    "enablePullDownRefresh":true,
+    "backgroundColorTop":"#fff",
+    "backgroundColor":"#00BFFF"
+
+  },
+ 
+  "style": "v2",
+  "sitemapLocation": "sitemap.json",
+    "tabBar":{
+      "color":"#000000",
+      "selectedColor":"#D81E06",
+      "backgroundColor":"#fff",
+      "list":[
+        {
+          "pagePath":"pages/home/home",
+          "text":"首页",
+          "iconPath":"image/home.png",
+          "selectedIconPath":"image/_home.png"
+        },
+        {
+          "pagePath":"pages/search/search",
+          "text":"分类",
+          "iconPath":"image/search.png",
+          "selectedIconPath":"image/_search.png"
+        },
+        {
+          "pagePath":"pages/img/img",
+          "text":"购物车",
+          "iconPath":"image/img.png",
+          "selectedIconPath":"image/_img.png"
+        },        
+        {
+          "pagePath":"pages/my/my",
+          "text":"我的",
+          "iconPath":"image/my.png",
+          "selectedIconPath":"image/_my.png"
+        }
+      ]
+    }
+}

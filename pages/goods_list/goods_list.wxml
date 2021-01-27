@@ -1,0 +1,10 @@
+<view>
+  <SearchInput></SearchInput>
+</view>
+<view>
+  <Tabs tabs="{{tabs}}" bindtabsItemChange="handleTabsItemChange">
+  </Tabs>
+  <view class="goods_content">
+        <goods wx:for="{{goodsList}}" wx:key="this" commodity="{{item}}"></goods>
+  </view>
+</view>

@@ -1,0 +1,15 @@
+<navigator class="good" url="../../pages/goods_details/goods_details?goods_id={{commodity.goods_id}}">
+          <view class="good_img">
+            <image src="{{commodity.goods_small_logo || '../../image/image.png'}}" mode="widthFix"></image>
+          </view>
+          <view class="good_content">
+            <view class="good_name">{{commodity.goods_name}}</view>
+            <view class="good_shop">我的商铺</view>
+            <view class="good_pice">
+              ￥
+              <text class="price_now">{{commodity.goods_price}}</text>
+                <text class="price_old">3200</text>
+            </view>
+            <view class="shop_cart"><text catchtap="handleCart">收藏</text> </view>
+          </view>
+  </navigator>   

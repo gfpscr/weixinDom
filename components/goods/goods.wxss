@@ -1,0 +1,45 @@
+.good{
+  display: flex;
+  border-bottom: 2rpx solid #ccc;
+  margin-right: 10rpx;
+}
+.good .good_img{
+  flex: 2;
+}
+.good .good_img image{
+  width:80%;
+}
+.good .good_content{
+  flex: 3;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding-left: 15rpx;
+}
+.good .good_content .good_name,.good .good_content .good_shop{
+  display: -webkit-box;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  word-wrap:break-word;
+  -webkit-line-clamp: 2;
+} 
+.good .good_content .good_pice {
+  color: var(--themeColor);
+  font-size: 42rpx;
+}
+.good .good_content .good_pice .price_now{
+  color: var(--themeColor);
+  font-size: 32rpx;
+}
+.good .good_content .good_pice .price_old{
+  font-size: 26rpx;
+  margin-left: 15rpx;
+  color:#ccc;
+  text-decoration: line-through;
+}
+.shop_cart{
+  margin-right: 50rpx;
+  display: flex;
+  z-index: 2;
+  justify-content: flex-end;
+}

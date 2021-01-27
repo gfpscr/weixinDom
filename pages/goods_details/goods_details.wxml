@@ -1,0 +1,55 @@
+<view class="content">
+  <view class="detail_swiper">
+      <swiper circular autoplay indicator-dots>
+        <swiper-item wx:for="{{detail.pics}}" wx:key="pics_id" bindtap="handlePreviewImage" data-url="{{item.pics_big_url}}">
+          <image src="{{item.pics_mid_url}}"></image>
+        </swiper-item>
+      </swiper>
+  </view>
+  <view class="good_price">
+     ￥{{detail.goods_price}}
+  </view>
+  <view class="good_name">
+    <view class="good_name_text">
+      {{detail.goods_name}}
+    </view>
+    <view class="good_collection">
+        收藏
+    </view>
+  </view>
+  <view class="good_detail">
+      <view class="good_detail_title">
+          图片详情
+      </view>
+      <view class="good_detail_details">
+        <rich-text nodes="{{detail.goods_introduce}}"></rich-text>        
+      </view>
+  </view>
+  <view class="btm_tool">
+    <view class="tool_item">
+      <view></view>
+      <view>客服</view>
+    </view>
+    <view class="tool_item">
+      <view></view>
+      <view>客服</view>
+    </view>
+    <view class="tool_item">
+      <view></view>
+      <view>客服</view>
+    </view>
+    <view class="tool_item">
+      <view></view>
+      <view>客服</view>
+    </view>
+    <view class="tool_item">
+      加入购物车
+    </view> 
+    <view class="tool_item">
+    </view>
+
+
+  </view>
+
+
+</view>
