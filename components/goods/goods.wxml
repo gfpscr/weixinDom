@@ -1,6 +1,6 @@
 <navigator class="good" url="../../pages/goods_details/goods_details?goods_id={{commodity.goods_id}}">
           <view class="good_img">
-            <image src="{{commodity.goods_small_logo || '../../image/image.png'}}" mode="widthFix"></image>
+            <image src="{{commodity.goods_small_logo || '../../image/image.png'}}" mode="widthFix" lazy-load="true"></image>
           </view>
           <view class="good_content">
             <view class="good_name">{{commodity.goods_name}}</view>

@@ -41,7 +41,10 @@ Page({
 
     
   },
-
+  onLazyLoad:function(e){
+    console.log(e)
+      console.log(e.currentTarget.dataset.src)
+  },
   /**
    * 生命周期函数--监听页面初次渲染完成
    */

@@ -2,7 +2,7 @@
   <view class="detail_swiper">
       <swiper circular autoplay indicator-dots>
         <swiper-item wx:for="{{detail.pics}}" wx:key="pics_id" bindtap="handlePreviewImage" data-url="{{item.pics_big_url}}">
-          <image src="{{item.pics_mid_url}}"></image>
+          <image src="{{item.pics_mid_url}}" lazy-load="true"></image>
         </swiper-item>
       </swiper>
   </view>
@@ -27,25 +27,28 @@
   </view>
   <view class="btm_tool">
     <view class="tool_item">
+    <navigator> 
       <view></view>
       <view>客服</view>
+    </navigator> 
     </view>
     <view class="tool_item">
-      <view></view>
-      <view>客服</view>
+      <navigator> 
+        <view></view>
+        <view>客服</view>
+      </navigator> 
     </view>
     <view class="tool_item">
-      <view></view>
-      <view>客服</view>
+      <navigator> 
+        <view></view>
+        <view>客服</view>
+      </navigator> 
     </view>
-    <view class="tool_item">
-      <view></view>
-      <view>客服</view>
-    </view>
-    <view class="tool_item">
-      加入购物车
+    <view class="tool_item tool_">
+      购物车
     </view> 
-    <view class="tool_item">
+    <view class="tool_item tool_">
+      加入购物车
     </view>
 
 

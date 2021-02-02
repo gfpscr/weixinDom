@@ -39,7 +39,7 @@ page{
   justify-content: center;
 }
 .good_detail{
-
+  padding-bottom: 90rpx;
 }
 .good_detail .good_detail_title{
   font-size: 36rpx;
@@ -54,4 +54,26 @@ page{
 }
 .good_detail .good_detail_details{
   margin-top: 5rpx;
+}
+.btm_tool{
+  display: flex;
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 90rpx;
+  background-color: white;
+}
+.btm_tool>.tool_item{
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--themeColor);
+}
+.btm_tool>.tool_{
+  height: 100%;
+  flex: 2;
+  color: black;
+  background-color: var(--themeColor);
 }

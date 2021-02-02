@@ -6,7 +6,7 @@
       <swiper autoplay indicator-dots circular>
          <swiper-item wx:for="{{swiperData}}" wx:key="goods_id"> 
             <navigator>
-               <image mode="widthFix" src="{{item.image_src}}"></image>               
+               <image mode="widthFix" src="{{item.image_src}}" lazy-load="true"></image>               
             </navigator>   
          </swiper-item>
       </swiper>
@@ -14,7 +14,7 @@
    <!-- 导航栏 -->
     <view class="index_cate">
        <navigator wx:for="{{casesList}}"  wx:key="name">
-          <image mode="widthFix" src="{{item.image_src}}"></image>
+          <image mode="widthFix" src="{{item.image_src}}" ></image>
        </navigator>
     </view>
 
